@@ -1,6 +1,7 @@
-*Exploring Android Navigation Component*
-**Mentioned bugs and problems**
-***Bug with opening new Activity when action has animations***
+# Exploring Android Navigation Component #
+## Mentioned bugs and problems ##
+### Bug with opening new Activity when action has animations ###
+
 When action has custom animations, like this:
 ```
 <action
