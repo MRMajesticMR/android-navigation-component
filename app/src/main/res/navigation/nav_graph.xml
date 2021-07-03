@@ -19,7 +19,12 @@
         android:id="@+id/list"
         android:name="ru.arkasha.navigationcomponent.ListScreen"
         android:label="s_list"
-        tools:layout="@layout/s_list" />
+        tools:layout="@layout/s_list" >
+        <action
+            android:id="@+id/action_list_to_supportActivity"
+            app:destination="@id/supportActivity" />
+    </fragment>
+
     <dialog
         android:id="@+id/appDf"
         android:name="ru.arkasha.navigationcomponent.AppDialogFragment"
@@ -32,5 +37,11 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </dialog>
+
+    <activity
+        android:id="@+id/supportActivity"
+        android:name="ru.arkasha.navigationcomponent.SupportActivity"
+        android:label="activity_support"
+        tools:layout="@layout/activity_support" />
 
 </navigation>
