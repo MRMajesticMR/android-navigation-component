@@ -11,7 +11,7 @@ class CodeLoginScreen : Fragment(R.layout.s_login_code) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<View>(R.id.bShowGlobal).setOnClickListener {
-            findNavController().navigate(R.id.action_global_globalScreen)
+            findNavController().navigate(MainScreenDirections.actionGlobalGlobalScreen())
         }
     }
 
