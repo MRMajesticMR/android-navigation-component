@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import ru.arkasha.navigationcomponent.MainScreenDirections
 import ru.arkasha.navigationcomponent.R
 
 class EmailLoginScreen : Fragment(R.layout.s_login_email) {

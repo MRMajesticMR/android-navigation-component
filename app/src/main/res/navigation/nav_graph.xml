@@ -53,4 +53,17 @@
         android:label="activity_support"
         tools:layout="@layout/activity_support" />
 
+    <fragment
+        android:id="@+id/globalScreen"
+        android:name="ru.arkasha.navigationcomponent.GlobalScreen"
+        android:label="GlobalScreen" />
+
+    <action
+        android:id="@+id/action_global_globalScreen"
+        app:destination="@id/globalScreen"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
 </navigation>
