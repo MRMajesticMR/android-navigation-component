@@ -40,7 +40,7 @@ class MainScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.setOnClickListener {
-            it.findNavController().navigate(MainScreenDirections.actionMainToList())
+            it.findNavController().navigate(MainScreenDirections.actionMainToAppDialogFragment())
         }
     }
 
