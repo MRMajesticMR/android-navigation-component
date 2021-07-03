@@ -5,21 +5,30 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/main">
 
+    <include app:graph="@navigation/login_graph" />
+
     <fragment
         android:id="@+id/main"
         android:name="ru.arkasha.navigationcomponent.MainScreen"
         android:label="s_main"
-        tools:layout="@layout/s_main" >
+        tools:layout="@layout/s_main">
         <action
             android:id="@+id/action_main_to_appDialogFragment"
             app:destination="@id/appDf" />
+        <action
+            android:id="@+id/action_main_to_emailLoginScreen"
+            app:destination="@id/login_graph"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
     <fragment
         android:id="@+id/list"
         android:name="ru.arkasha.navigationcomponent.ListScreen"
         android:label="s_list"
-        tools:layout="@layout/s_list" >
+        tools:layout="@layout/s_list">
         <action
             android:id="@+id/action_list_to_supportActivity"
             app:destination="@id/supportActivity" />
@@ -28,7 +37,7 @@
     <dialog
         android:id="@+id/appDf"
         android:name="ru.arkasha.navigationcomponent.AppDialogFragment"
-        android:label="AppDialogFragment" >
+        android:label="AppDialogFragment">
         <action
             android:id="@+id/action_appDialogFragment_to_list"
             app:destination="@id/list"

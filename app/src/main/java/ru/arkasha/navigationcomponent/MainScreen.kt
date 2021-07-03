@@ -11,6 +11,10 @@ class MainScreen : Fragment(R.layout.s_main) {
         view.setOnClickListener {
             findNavController().navigate(MainScreenDirections.actionMainToAppDialogFragment())
         }
+
+        view.findViewById<View>(R.id.bLogin).setOnClickListener {
+            findNavController().navigate(MainScreenDirections.actionMainToEmailLoginScreen())
+        }
     }
 
 }
