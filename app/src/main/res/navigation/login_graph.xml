@@ -20,6 +20,11 @@
     <fragment
         android:id="@+id/codeLoginScreen"
         android:name="ru.arkasha.navigationcomponent.login.CodeLoginScreen"
-        android:label="CodeLoginScreen" />
+        android:label="CodeLoginScreen" >
+        <action
+            android:id="@+id/action_codeLoginScreen_to_emailLoginScreen"
+            app:popUpTo="@id/emailLoginScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>
