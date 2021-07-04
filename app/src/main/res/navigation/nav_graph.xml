@@ -32,6 +32,13 @@
         <action
             android:id="@+id/action_list_to_supportActivity"
             app:destination="@id/supportActivity" />
+        <action
+            android:id="@+id/action_list_to_detailsScreen"
+            app:destination="@id/detailsScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
     <dialog
@@ -65,5 +72,13 @@
         app:exitAnim="@anim/nav_default_exit_anim"
         app:popEnterAnim="@anim/nav_default_pop_enter_anim"
         app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="ru.arkasha.navigationcomponent.DetailsScreen"
+        android:label="DetailsScreen" >
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
 
 </navigation>

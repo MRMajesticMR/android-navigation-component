@@ -11,6 +11,10 @@ class ListScreen : Fragment(R.layout.s_list) {
         view.setOnClickListener {
             findNavController().navigate(ListScreenDirections.actionListToSupportActivity())
         }
+
+        view.findViewById<View>(R.id.bShowDetails).setOnClickListener {
+            findNavController().navigate(ListScreenDirections.actionListToDetailsScreen(1L))
+        }
     }
 
 }
